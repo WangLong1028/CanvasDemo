@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <title>群山</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        #mountain_canvas{
+            margin-top: 100px;
+        }
+
+        [type=range]{
+            width: calc(100% - 20px);
+            height: 36px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="mountain_canvas"></canvas>
+    <input id="slider" type="range" min="0" max="100" oninput="progressChange(this.value)" value="0">
+    <h2>&nbsp;by 空指针异常</h2>
+    <script src="./mountains.js"></script>
+</body>
+
+</html>
